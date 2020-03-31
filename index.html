@@ -1,0 +1,430 @@
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
+  	<style type="text/css">
+       body{
+       	background: #333333;
+       	margin: 0px;
+       }
+
+       #wrapper{
+       	background: white;
+       	width: 960px;
+       	margin: 0 auto;
+       	padding:15px 10px 0px;
+       }
+
+       #headerImage{
+       	/*background: url("headerImage.jpg");*/
+       }
+
+       #menu{
+       	background: #333333;
+       	padding: 8px;
+        text-align: center;
+       }
+
+       #menu a{
+       	font-family: arial;
+       	font-weight: bold;
+       	text-transform: uppercase;
+       	font-size: 10px;
+        text-decoration: none;
+        color:white;
+        border-left: 1px dotted white;
+        padding-left: 10px;
+        margin-right: 10px;
+       }
+
+       #menu a:hover{
+       	color:#cb3000;
+       }
+
+       #content{
+       	border: 1px dashed #cecec2;
+
+       }
+
+       #sidebar{
+       	float: left;
+       	width: 230px;
+       	border: 1px dashed #cecec2;
+       	padding: 20px;
+       }
+
+       #sidebar h3{
+       	margin-bottom: 5px;
+       	text-transform: uppercase;
+       	font-size: 14px;
+       	font-family: arial;
+       }
+
+       #sidebar ul{
+       	margin: 0px;
+       	padding: 0px;
+       }
+
+       #sidebar ul li{
+        list-style-type: none;
+        border-bottom: 1px dotted #cecec2;
+        padding: 3px 0;
+       }
+
+       #sidebar ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #5b5b63;
+        font-family: arial;
+       }
+
+       #sidebar ul li a:hover{
+       	color: #cb3000;
+       }
+
+       #sidebar ul li:first-child{
+        border-top: 1px dotted #cecec2;
+       }
+
+       #sidebar ul li:last-child{
+       	margin-bottom: 30px;
+       }
+
+       #sidebar .lastKomen li a{
+       	text-transform: none;
+       }
+
+       #mainContent{
+       	float:left;
+       	width: 675px;
+       	padding: 5px;
+        border-right: 1px dashed #cecec2;
+       }
+
+       /*#mainContent ul{
+        padding:0px;
+        margin-left: 15px;
+       }*/
+
+       #mainContent .postGrid{
+         list-style-type: none;
+         display: block;
+         width: 300px;
+         height: 510px;
+         float: left;
+         /*border-bottom: 1px dashed #cecec2;*/
+         padding:5px 15px;
+         color: #363231;
+         overflow: hidden;
+
+        color:#5C5054;
+       }
+
+       #mainContent .postGrid a{
+        text-decoration: none;
+        color: #cb3000;
+       }
+
+       #mainContent .postGrid .tanggal{
+        float: left;
+        border-right:1px solid #cecec2;
+        margin-right: 10px;
+        padding-right:10px; 
+       }
+
+       #mainContent .postGrid .tanggal .date{
+        background: url("date.png") no-repeat;
+        width: 47px;
+        height: 47px;
+        text-align: center;
+        padding-top: 5px;
+        display: block;
+        color: white;
+        font-family: arial;
+        font-size: 24px;
+        float:left;
+       }
+
+       #mainContent .postGrid .tanggal .bulan{
+        float: left;
+        margin-left: 5px;
+        font-family: arial;
+        color: grey;
+       }
+
+       #mainContent .postGrid .penulis{
+        float:left;
+        margin-right: 5px;
+        margin-bottom: 5px;
+       }
+
+       #mainContent .postGrid .komen{
+       }
+
+       #mainContent .last{
+       	border-left: 1px dashed #cecec2;
+       }
+
+       #mainContent .separator{
+        background: url("dot.png") 0 100% repeat-x;
+        height: 30px;
+        margin-bottom: 30px;
+        clear: both;
+       }
+
+       #mainContent .thumb{
+        padding: 5px;
+        border: 1px dashed #cecec2;
+        margin-top: 15px;
+       }
+
+       #mainContent h3{
+        font-family: 'Merienda', cursive;
+        color: #2c353e;
+       }
+
+       #mainContent #pagination{
+        margin-left: 30px;
+       }
+
+       #mainContent #pagination a{
+        text-decoration: none;
+        color:#cb3000;
+        font-family: arial;
+        font-weight: bold;
+        border-right: 1px dotted #cecec2;
+        margin-right: 10px;
+        padding-right: 10px;
+       }
+
+       #mainContent #pagination a:hover{
+        color: black;
+       }
+
+       #mainContent #banner img{
+        margin-left: 10px;
+        margin-top: 20px;
+        border: 1px dotted #cecec2;
+        padding: 10px;
+        margin-bottom: 20px;
+       }
+
+       #footer{
+        clear: both;
+        background: url("footer.png");
+        height: 80px;
+        padding: 10px;
+        padding-top: 20px;
+       }
+
+       #footer a{
+        text-decoration: none;
+        color:#cb3000;
+       }
+
+       #footer .sumber{
+        float: right;
+       }
+  	</style>
+  <head>
+  <body>
+     <div id="wrapper">
+
+         <div id="header">
+
+         	<div id="headerImage">
+         		<img src="header.png" />
+         	</div> <!-- akhir headerImage-->
+
+         	<div id="menu">
+         		<a href="#">Tutorial Android</a>
+         		<a href="#">Tutorial BlackBerry</a>
+         		<a href="#">Tutorial C#</a>
+         		<a href="#">Tutorial Codeigniter</a>
+         		<a href="#">Tutorial Design Pattern</a>
+         		<a href="#">Tutorial jquery ajax</a>
+         		<a href="#">Tutorial php</a>
+         	</div>
+
+         </div> <!-- akhir header -->
+
+         <div id="content">
+
+         	<div id="sidebar">
+         		<h3>Serba Serbi</h3>
+         	    <ul>
+                   <li><a href="#">Beranda</a></li>
+                   <li><a href="#">Tentang Saya</a></li>
+                   <li><a href="#">Daftar Isi Blog</a></li>
+                   <li><a href="#">Download</a></li>
+                   <li><a href="#">Sahabat</a></li>
+                   <li><a href="#">Curhat</a></li>
+                   <li><a href="#">Daily</a></li>
+                   <li><a href="#">Kampus</a></li>
+                   <li><a href="#">TUgas</a></li>
+                   <li><a href="#">Teknologi</a></li>
+                   <li><a href="#">Tips Triks</a></li>
+         	    </ul>
+
+         	    <h3>Serba Serbi</h3>
+         	    <ul>
+                   <li><a href="#">Beranda</a></li>
+                   <li><a href="#">Tentang Saya</a></li>
+                   <li><a href="#">Daftar Isi Blog</a></li>
+                   <li><a href="#">Download</a></li>
+                   <li><a href="#">Sahabat</a></li>
+                   <li><a href="#">Curhat</a></li>
+                   <li><a href="#">Daily</a></li>
+                   <li><a href="#">Kampus</a></li>
+                   <li><a href="#">TUgas</a></li>
+                   <li><a href="#">Teknologi</a></li>
+                   <li><a href="#">Tips Triks</a></li>
+                   <li><a href="#">Dewa</a></li>
+         	    </ul>
+
+         	    <h3>Komentar Terakhir</h3>
+         	    <ul class="lastKomen">
+                   <li>agung on <a href="#"> Tutorial Android : Memanfaatkan Data RSS BMKG Untuk Membuat Aplikasi Pemantau Gempa</a></li>
+                   <li>setiawan on <a href="#">Aplikasi Web Penjualan Sederhana Dengan PHP</a></li>
+                   <li>hauril on <a href="#">Aplikasi Web Penjualan Sederhana Dengan PHP</a></li>
+                   <li>maulida on <a href="#">Aplikasi Web Penjualan Sederhana Dengan PHP</a></li>
+                   <li>nisfari on <a href="#">Aplikasi Web Penjualan Sederhana Dengan PHP</a></li>
+         	    </ul>
+
+              <h3>Visitor</h3>
+              <img src="counter.png" />
+
+              <h3>Visitor</h3>
+              <img src="counter.png" />
+
+            </div> <!-- akhir sidebar -->
+
+            <div id="mainContent">
+            	
+            		<div class="postGrid">
+                  <div class="meta">
+                    <div class="tanggal">
+                      <span class="date">24</span> 
+                      <span class="bulan"><div>Mar</div> <div>2013</div></span>
+                    </div>
+                    <div class="penulis">Ditulis oleh : Agung Setiawan</div>
+                    <div class="komen"><img src="komen.png"/> <a href="#">Ada 100  komentar</a></div>
+                  </div>
+
+                  <img class="thumb" src="thumb.jpg"/>
+                  <h3>Desain Web Tutorial : Contoh Desain Web Dengan HTML+CSS</h3>
+                
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            	     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            	     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            	     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            	     consequat. </div>
+
+            		<div class="postGrid last">
+                  <div class="meta">
+                    <div class="tanggal">
+                      <span class="date">24</span> 
+                      <span class="bulan"><div>Mar</div> <div>2013</div></span>
+                    </div>
+                    <div class="penulis">Ditulis oleh : Agung Setiawan</div>
+                    <div class="komen"><img src="komen.png"/> <a href="#">Ada 100  komentar</a></div>
+                  </div>
+
+                  <img class="thumb" src="thumb.jpg"/>
+                  <h3>Desain Web Tutorial : Contoh Desain Web Dengan HTML+CSS</h3>
+                  
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            		consequat. </div>
+                
+                <div class="separator"></div>
+
+            		<div class="postGrid">
+                  <div class="meta">
+                    <div class="tanggal">
+                      <span class="date">24</span> 
+                      <span class="bulan"><div>Mar</div> <div>2013</div></span>
+                    </div>
+                    <div class="penulis">Ditulis oleh : Agung Setiawan</div>
+                    <div class="komen"><img src="komen.png"/> <a href="#">Ada 100  komentar</a></div>
+                  </div>
+
+                  <img class="thumb" src="thumb.jpg"/>
+                  <h3>Desain Web Tutorial : Contoh Desain Web Dengan HTML+CSS</h3>
+                  
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            		consequat.</div>
+
+            		<div class="postGrid last">
+                  <div class="meta">
+                    <div class="tanggal">
+                      <span class="date">24</span> 
+                      <span class="bulan"><div>Mar</div> <div>2013</div></span>
+                    </div>
+                    <div class="penulis">Ditulis oleh : Agung Setiawan</div>
+                    <div class="komen"><img src="komen.png"/> <a href="#">Ada 100  komentar</a></div>
+                  </div>
+
+                  <img class="thumb" src="thumb.jpg"/>
+                  <h3>Desain Web Tutorial : Contoh Desain Web Dengan HTML+CSS</h3>
+                  
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            		consequat. </div>
+
+                <div class="separator"></div>
+
+                <div id="pagination">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                </div>
+
+                <div id="banner">
+                  <img src="agungsetiawan.jpg"/>
+                </div>
+            	
+            </div> <!-- akhir mainContent -->
+
+         </div> <!-- akhir content -->
+
+         <div id="footer">
+          dibuat oleh <a href="http://agung-setiawan.com">Agung Setiawan</a>
+          <span class="sumber">Referensi nyontek dari berbagai sumber</span>
+         </div> <!-- akhir footer -->
+
+     </div> <!-- akhir wrapper -->
+
+  </body>
+</html>
